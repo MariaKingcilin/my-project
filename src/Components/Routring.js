@@ -5,7 +5,6 @@ import Router from './Router';
 
 function Routring() {
     const [state,dispatch] = useReducer(setReducer,initialState);
-
   return (
     <div>
         <stateContext.Provider value={{state,dispatch}}>

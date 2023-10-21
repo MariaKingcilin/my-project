@@ -1,11 +1,11 @@
-import allProducts from '../Allproducts.json'
+import Products from '../Allproducts.json'
 
 export const initialState = {
-    allHairProducts : allProducts.HairProducts,
-    allFaceProducts : allProducts.FaceProducts,
-    allBodyProducts : allProducts.BodyProducts,
-    allBabyProducts : allProducts.BabyProducts,
-    allProducts : [...allProducts.HairProducts,...allProducts.FaceProducts,...allProducts.BodyProducts,...allProducts.BabyProducts],
+    allHairProducts : Products.HairProducts,
+    allFaceProducts : Products.FaceProducts,
+    allBodyProducts : Products.BodyProducts,
+    allBabyProducts : Products.BabyProducts,
+    allProducts : [...Products.HairProducts,...Products.FaceProducts,...Products.BodyProducts,...Products.BabyProducts],
     allAddCart : [],
     orderAmount : 0,
     offerAmount : 0,

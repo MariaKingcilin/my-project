@@ -7,7 +7,6 @@ import ProductPayment from './ProductPayment'
 import Face from './Face/Face'
 import Body from './Body/Body'
 import Baby from './Baby/Baby'
-// import Navbar from './Navbar'
 
 function Router() {
   return (

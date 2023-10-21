@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
 import Button from '@mui/material/Button'
-import Stack from '@mui/material/Stack'
 import SyncAltIcon from '@mui/icons-material/SyncAlt'
 import { stateContext } from '../Context/StateContext'
 import Product from '../Product'
@@ -34,7 +33,7 @@ function Faceproducts() {
                 return b.price-a.price;
             }
         })
-        dispatch({type : 'addCart', payload : sort})
+        dispatch({type : 'faceCart', payload : sort})
     },[filSort])
 
     let filterSort = (e) => {

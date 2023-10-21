@@ -7,7 +7,7 @@ import Product from '../Product'
 
 function Hairproducts() {
     const {state,dispatch} = useContext(stateContext);
-
+    
     const [productSelect,setProductSelect] = useState('all');
     const [filSort,setFilSort] = useState(null);
 
@@ -21,7 +21,7 @@ function Hairproducts() {
             e.currentTarget.classList.add('active-btn')
         })
     }
-console.log(state.allHairProducts)
+
     useEffect(() => {
         let sort = state.allHairProducts.sort((a,b) => {
             if(filSort === 'rating') {

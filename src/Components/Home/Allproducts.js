@@ -10,7 +10,6 @@ function Allproducts() {
 
     const [productSelect,setProductSelect] = useState('all');
     const [filSort,setFilSort] = useState(null);
-    // const [filtered,setFiltered] = useState(state.allProducts);
 
     let handleSelect = (e) => {
         setProductSelect(e.target.name);
@@ -35,7 +34,7 @@ function Allproducts() {
                 return b.price-a.price;
             }
         })
-        dispatch({type : 'addCart', payload : sort})
+        dispatch({type : 'allProduct', payload : sort})
     },[filSort])
 
     let filterSort = (e) => {
@@ -56,7 +55,6 @@ function Allproducts() {
         let temp = state.allProducts.filter((prod) => {
             return prod.details.toLowerCase().includes(state.searchQry);
         });
-        // setFiltered(temp);
         dispatch({type : 'allProduct', payload : temp});
     }
 

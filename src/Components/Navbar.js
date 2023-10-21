@@ -28,7 +28,7 @@ import Cartproduct from "./Cartproduct";
 import { useNavigate } from "react-router-dom";
 
 import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
-import { auth } from "../firebase.config";
+import { auth } from "./firebase.config";
 
 const style = {
   position: 'absolute',
