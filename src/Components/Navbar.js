@@ -246,7 +246,7 @@ export default function Header() {
                 <ul>
                   <a href="" onClick={(e) => {
                     e.preventDefault();
-                    navigate('/');
+                    navigate('/my-project');
                   }}><li>HOME</li></a>
                   <a href="" onClick={(e) => {
                     e.preventDefault();
@@ -419,7 +419,7 @@ export default function Header() {
               <p>It's a good day to buy the items you saved for later</p>
               <Button className="empty-btn" variant="contained"
               onClick={() => 
-                navigate('/')
+                navigate('/my-project')
               }
               ><a href="#">SHOP NOW</a></Button>
             </div>}

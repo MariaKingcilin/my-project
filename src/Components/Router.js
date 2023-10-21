@@ -13,7 +13,7 @@ function Router() {
     <div>
       <BrowserRouter>
         <Routes>
-            <Route path='/' element={<Home />}></Route>
+            <Route path='/my-project' element={<Home />}></Route>
             <Route path='/hair' element={<Hair />}></Route>
             <Route path='/face' element={<Face />}></Route>
             <Route path='/body' element={<Body />}></Route>

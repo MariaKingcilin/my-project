@@ -96,7 +96,7 @@ function ProductPayment() {
           <div className='back-icon'>
               <ArrowBackIcon onClick={(e) => {
                 e.preventDefault();
-                navigate('/')
+                navigate('/my-project')
               }} />
           </div>
           <div className='logo'>
